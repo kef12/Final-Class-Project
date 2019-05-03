@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-require ("./Quotes");
+require ("./Quotes.css");
 
 class Quotes extends React.Component {
     state = {
@@ -32,7 +32,7 @@ class Quotes extends React.Component {
                 </div>
                 </div>
 
-                <button onClick={this.handleOnClick} class="button">Inspire Me</button>
+                <button onClick={this.handleOnClick} className="buttonQuote">Inspire Me</button>
 
                 </div>
             

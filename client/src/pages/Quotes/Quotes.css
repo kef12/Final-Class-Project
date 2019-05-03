@@ -7,11 +7,11 @@
     
 }
 
-/* body {
+body {
   background: url("./quoteBackground.jpg");
-  } */
+  }
 
-  .button {
+  .buttonQuote {
         background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34));
         background-color: #68113F;
         padding: 10px;
