@@ -5,10 +5,10 @@ import {BrowserRouter as Router, Route,} from "react-router-dom";
 
 import "./App.css";
 
-import Landing from "./components/pages/Landing";
-import GameApp from "./components/pages/GameApp";
-import Quotes from "./components/pages/Quotes";
-import Recipe from "./components/pages/Recipe";
+import Landing from "./pages/Landing";
+import GameApp from "./pages/GameApp";
+import Quotes from "./pages/Quotes";
+import Recipe from "./pages/Recipe";
 
 
 function App() {
