@@ -8,7 +8,7 @@ import './index.css';
 const SIZE = 12;
 const COLORS = ['blue','red','green','yellow','orange'];
 
-class App extends Component {
+class BoardGame extends Component {
   constructor(props) {
     super(props);
     this.incrementCount = this.incrementCount.bind(this);
@@ -66,4 +66,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default BoardGame;
