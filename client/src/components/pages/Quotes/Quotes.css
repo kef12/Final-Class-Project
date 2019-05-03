@@ -7,9 +7,9 @@
     
 }
 
-body {
-    background: url("./quoteBackground.jpg");
-  }
+/* body {
+  background: url("./quoteBackground.jpg");
+  } */
 
   .button {
         background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34));
