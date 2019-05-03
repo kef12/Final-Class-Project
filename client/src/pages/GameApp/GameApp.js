@@ -3,7 +3,7 @@ import Grid from './Grid/Grid';
 import ColorPickers from './ColorPickers/ColorPickers';
 import { Graph } from './Graph';
 
-import './index.css';
+import './GameApp';
 
 const SIZE = 12;
 const COLORS = ['blue','red','green','yellow','orange'];

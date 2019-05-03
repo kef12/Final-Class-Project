@@ -1,15 +1,15 @@
 import React from "react";
-import ("./Landing");
+import ("./Landing.css");
 
 const Landing = () => {
   return (
     <div>
         <nav className="main_nav">
             <ul className="d-flex flex-row align-items-center justify-content-center">
-                <li><a>home</a></li>
-                <li><a>Board Game</a></li>
-                <li><a>Recipes</a></li>
-                <li><a>Quotes</a></li>
+                <li>home</li>
+                <li>Board Game</li>
+                <li>Recipes</li>
+                <li>Quotes</li>
             </ul>
         </nav>
   

@@ -1,10 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Route,} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch}  from "react-router-dom";
 
 //Import bootstrap, font-awsome, etc.
-
-import "./App.css";
-
+// import "./App.css";
 import Landing from "./pages/Landing";
 import GameApp from "./pages/GameApp";
 import Quotes from "./pages/Quotes";
@@ -15,12 +13,14 @@ function App() {
    return (
        <Router>
            <div>
-               <Route exact path="/" components={Landing} />
+            <Switch>
+               <Route exact path="/" component={Landing} />
 
-                <Route path="/GameApp" components={GameApp} /> 
-                <Route path="/Quotes" components={Quotes} /> 
+                <Route path="/GameApp" component={GameApp} /> 
+                <Route path="/Quotes" component={Quotes} /> 
           
-               <Route path="/Recipe" components={Recipe} />
+               <Route path="/Recipe" component={Recipe} />
+            </Switch>
            </div>
        </Router>
    )
