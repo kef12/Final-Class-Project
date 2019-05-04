@@ -23,9 +23,10 @@ render () {
     </div>
     <div className="Landing__data">
       <div className="Landing__data__content">
-        <h1>Does this sound like you?</h1>
+        <h1>Make your free time productive with the Meal Planning application.</h1>
+        <h1>Does this sound like you? </h1>
         <ul>
-          <li>Wasted a lot of time thinking about what I should make for dinner today</li>
+          <li>Wasted a lot of time thinking about what I should make for dinner today.</li>
           <li>Want to watch what I eat but don't know how?</li>
           <li>Not good at pre-planning meals</li>
           <li>Want to track my weight and calorie intake</li>
