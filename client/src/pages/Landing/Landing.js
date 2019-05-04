@@ -7,16 +7,6 @@ import ("./Landing.css");
 const Landing = () => {
   return (
     <div>
-        <nav className="main_nav">
-            <ul className="d-flex flex-row align-items-center justify-content-center">
-                <li></li>
-                <li></li>
-                <li></li>
-								{/* <button href="/Quotes">Quotes</button> */}
-                <a href="/Quotes"/><li></li>
-						</ul>
-						
-        </nav>
   
 	    <div className="home">
 		

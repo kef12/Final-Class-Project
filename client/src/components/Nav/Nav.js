@@ -13,7 +13,7 @@ function Nav() {
         <font color="White">Quotes</font>
       </a>
       <a className="navbar-brand" href="/GameApp">
-        <font color= "white">Games</font>
+        <font color= "white">Game</font>
       </a>
       <a className="navbar-brand" href="/Recipe">
         <font color="white">Recipes</font>
