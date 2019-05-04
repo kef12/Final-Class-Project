@@ -3,19 +3,20 @@ import ('./Nav.css');
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary" id="navBar">
+    //<nav className="navbar navbar-expand-lg navbar-dark bg-primary" id="navBar">
+    <nav className="navbar navbar-default" id="navBar">
+
     <a className="navbar-brand" href="/">
-        Home
+       <font color="white">Home</font> 
       </a>
       <a className="navbar-brand" href="/Quotes">
-        Quotes
+        <font color="White">Quotes</font>
       </a>
-      
       <a className="navbar-brand" href="/GameApp">
-        Games
+        <font color= "white">Games</font>
       </a>
       <a className="navbar-brand" href="/Recipe">
-        Recipes
+        <font color="white">Recipes</font>
       </a>
     </nav>
   );
