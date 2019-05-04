@@ -51,14 +51,22 @@ class BoardGame extends Component {
   render() {
     return (
       <div className="content">
+
         <div className="header">
           <h1>Color Flood</h1>
           <div className="newgame" onClick={(e) => this.restart()}>New Game</div>
           <div className="count">Changes <span>{this.state.count}</span></div>
         </div>
+
           <div><ColorPickers colors={this.state.colors} clickHandler={this.colorFill} incrementCount={this.incrementCount}/></div>
+
+          <div className="instructions">
           <h3>Starting in the top left corner click on the circles to fill the grid! Try to get as few changes as possible!</h3>
+          </div>
+
+          <div id="grid">
   <Grid grid={this.state.graph} colors={this.state.colors} size={this.state.size}/> 
+  </div>
 
       </div> 
 
