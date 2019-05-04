@@ -1,0 +1,10 @@
+#navBar {
+    
+        margin-right: 52px;
+        font-size: 14px;
+	    font-weight: 700;
+        background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34));
+        background-color: #68113F;
+	    text-transform: uppercase;
+        text-align: center;
+}
