@@ -7,12 +7,14 @@ import Landing from "./pages/Landing";
 import GameApp from "./pages/GameApp";
 import Quotes from "./pages/Quotes";
 import Recipe from "./pages/Recipe";
+import Nav from "./components/Nav";
 
 
 function App() {
    return (
        <Router>
            <div>
+               <Nav />
             <Switch>
                <Route exact path="/" component={Landing} />
 

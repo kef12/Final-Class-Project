@@ -1,5 +1,8 @@
+// import {Quotes, GameApp, Recipe} from 'react-router';
 import React from "react";
 import ("./Landing.css");
+
+
 
 const Landing = () => {
   return (
@@ -9,8 +12,10 @@ const Landing = () => {
                 <li>home</li>
                 <li>Board Game</li>
                 <li>Recipes</li>
-                <li>Quotes</li>
-            </ul>
+								{/* <button href="/Quotes">Quotes</button> */}
+                <a href="/Quotes"/><li>Quotes</li>
+						</ul>
+						
         </nav>
   
 	    <div className="home">
@@ -40,8 +45,8 @@ const Landing = () => {
 						</div>
 					</div>
 				
-					<div className="slide">
-						 {/* <div className="background_image" style="background-image:url(images/samplebackground.jpg)"></div>  */}
+					{/* <div className="slide">
+						 <div className="background_image" style="background-image:url(images/samplebackground.jpg)"></div> 
 						<div className="home_slider_overlay"></div>
 						<div className="slide_wrap d-flex flex-column align-items-start justify-content-center">
 						    <div className="home_container">
@@ -60,10 +65,10 @@ const Landing = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
                     
-					<div className="slide">
-						 {/* <div className="background_image" style="background-image:url(images/samplebackground.jpg)"></div>  */}
+					{/* <div className="slide">
+						 <div className="background_image" style="background-image:url(images/samplebackground.jpg)"></div> 
 						<div className="home_slider_overlay"></div>
 						<div className="slide_wrap d-flex flex-column align-items-start justify-content-center">
 						    <div className="home_container">
@@ -82,11 +87,11 @@ const Landing = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
-					<div className="slide">
+					{/* <div className="slide"> */}
 						 {/* <div className="background_image" style="background-image:url(images/samplebackground.jpg)"></div>  */}
-						<div className="home_slider_overlay"></div>
+						{/* <div className="home_slider_overlay"></div>
 						<div className="slide_wrap d-flex flex-column align-items-start justify-content-center">
 						    <div className="home_container">
 							    <div className="container">
@@ -104,7 +109,7 @@ const Landing = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 			    </div>
 		    </div>
         </div>

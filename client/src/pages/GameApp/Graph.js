@@ -1,3 +1,5 @@
+
+
 const COLORS = [0,1,2,3,4]; 
 
 const randomIndexFromCollection = (collection) => {

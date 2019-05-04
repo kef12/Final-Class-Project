@@ -21,9 +21,9 @@ class Quotes extends React.Component {
     render () {
         return (
             <div>
-            <div id="navBar">
+            {/* <div id="navBar">
                 <h1>Time To Kill</h1>
-            </div>
+            </div> */}
             <div id="welcomeDiv">                
                 <div>
                 {<h2>{ `"` + this.state.quote + `"` }</h2>}
