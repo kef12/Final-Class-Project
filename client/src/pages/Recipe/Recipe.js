@@ -30,7 +30,7 @@ render () {
           <li>Not good at pre-planning meals</li>
           <li>Want to track my weight and calorie intake</li>
         </ul>
-        <Button type="accent" link={true} path="survey" className="Landing__data__button">Let's find that meal plan</Button>
+        <Button type="accent" link={true} path="/Recipe/survey" className="Landing__data__button">Let's find that meal plan</Button>
       </div>
     </div>
   </div>

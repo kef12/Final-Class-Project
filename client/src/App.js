@@ -25,9 +25,9 @@ function App() {
                 <Route path="/Quotes" component={Quotes} /> 
           
                <Route path="/Recipe" component={Recipe} />
-               <Route path="Recipe/recipehome" component={RecipeHome} />
-               <Route path="Recipe/survey" component={Survey} />
-               <Route path="Recipe/meal-plan" component={Plan} />
+               <Route path="/Recipe/recipehome" component={RecipeHome} />
+               <Route path="/Recipe/survey" component={Survey} />
+               <Route path="/Recipe/meal-plan" component={Plan} />
                
             </Switch>
            </div>
