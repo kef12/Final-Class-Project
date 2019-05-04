@@ -52,8 +52,13 @@ class BoardGame extends Component {
     return (
       <div className="content">
 
-        <div className="header">
-          <h1>Color Flood</h1>
+        <div className="header" class="row">
+        <div class="col-md-4"></div>
+          <h1 id="colorTitle">Color Flood</h1>
+          </div>
+
+          <div class="row" id="newchanges">
+          <div class="col-md-5"></div>
           <div className="newgame" onClick={(e) => this.restart()}>New Game</div>
           <div className="count">Changes <span>{this.state.count}</span></div>
         </div>

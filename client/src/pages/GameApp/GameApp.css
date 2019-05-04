@@ -12,7 +12,7 @@ h1 {
 
 h3 {
 	margin: 20px;
-	color: #f6f7ee;
+	color: blue;
 }
 
 .header {
@@ -49,4 +49,8 @@ h3 {
 	background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
 	cursor: pointer;
 	margin: 0;
+}
+
+#colorTitle {
+	color: blue;
 }
