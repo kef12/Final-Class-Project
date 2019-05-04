@@ -24,7 +24,6 @@ const Landing = () => {
 			    <div className="owl-carousel owl-theme home_slider">
 
 					<div className="slide">
-						 {/* <div className="background_image" style="background-image:url(images/samplebackground.jpg)"></div>  */}
 						<div className="home_slider_overlay"></div>
 						<div className="slide_wrap d-flex flex-column align-items-start justify-content-center">
 						    <div className="home_container">
