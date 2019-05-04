@@ -7,7 +7,7 @@ class Quotes extends React.Component {
         quote: ""
     };
     callApi = () => {
-        axios.get("https://quotes.rest/qod.json?category=life")
+        axios.get("https://quotes.rest/qod.json?category=love")
         .then((response) => {
             let results = response.data.contents.quotes[0].quote;
             let author = response.data.contents.quotes[0].author;

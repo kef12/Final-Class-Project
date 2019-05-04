@@ -3,7 +3,7 @@ import Grid from './Grid/Grid';
 import ColorPickers from './ColorPickers/ColorPickers';
 import { Graph } from './Graph';
 
-import './GameApp';
+import './GameApp.css';
 
 const SIZE = 12;
 const COLORS = ['blue','red','green','yellow','orange'];
@@ -50,16 +50,16 @@ class BoardGame extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="container">
 
-        <div className="header" class="row">
-        <div class="col-md-4"></div>
+        <div className="header" className="row">
+        <div className="col-md-4"></div>
           <h1 id="colorTitle">Color Flood</h1>
           </div>
 
-          <div class="row" id="newchanges">
-          <div class="col-md-5"></div>
-          <div className="newgame" onClick={(e) => this.restart()}>New Game</div>
+          <div className="row" id="newchanges">
+          <div className="col-md-5"></div>
+          <div id="newgame1" onClick={(e) => this.restart()}>New Game</div>
           <div className="count">Changes <span>{this.state.count}</span></div>
         </div>
 

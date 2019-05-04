@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 //import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

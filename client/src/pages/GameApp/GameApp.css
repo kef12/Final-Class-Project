@@ -1,9 +1,9 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: Sans-Serif;
   background-color: #3d4226;
-}
+} */
 
 h1 {
 	margin: 20px;
@@ -15,42 +15,37 @@ h3 {
 	color: blue;
 }
 
-.header {
-	margin-top: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	min-width: 360px;
-}
 
 .count {
-	padding: 2px;
+	
 	font-size: 10pt;
 	border-width: 1px;
 	border-style: solid;
-	background-color: #0c9bb4;
-	color: #2a0e23;
+	background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+	color: black;
+	padding: 20px;
+	margin: 20px;
 }
 
 .count span {
 	text-align: center;
 	font-size: 16pt;
 	display: block;
+	color: red;
 }
 
-.content {
-	max-width: 80vh;
-}
 
-.newgame {
+#newgame1 {
 	white-space: nowrap;
 	margin-right: 10px;
-	padding: 5px;
+	padding: 15px;
 	background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
 	cursor: pointer;
 	margin: 0;
+	color: black;
+	border-width: 1px;
+	border-style: solid;
+	margin: 20px;
+	
 }
 
-#colorTitle {
-	color: blue;
-}
