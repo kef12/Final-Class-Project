@@ -7,7 +7,7 @@ import Landing from "./pages/Landing";
 import GameApp from "./pages/GameApp";
 import Quotes from "./pages/Quotes";
 import Recipe from "./pages/Recipe";
-import RecipeHome from "./pages/Recipe/RecipeHome";
+// import RecipeHome from "./pages/Recipe/RecipeHome";
 import Survey from "./pages/Recipe/Survey";
 import Plan from "./pages/Recipe/Plan";
 import Nav from "./components/Nav";
@@ -25,9 +25,9 @@ function App() {
                 <Route path="/Quotes" component={Quotes} /> 
           
                <Route path="/Recipe" component={Recipe} />
-               <Route path="Recipe/recipehome" component={RecipeHome} />
-               <Route path="Recipe/survey" component={Survey} />
-               <Route path="Recipe/meal-plan" component={Plan} />
+               {/* <Route path="/Recipe/recipehome" component={RecipeHome} /> */}
+               <Route path="/survey" component={Survey} />
+               <Route path="/meal-plan" component={Plan} />
                
             </Switch>
            </div>
