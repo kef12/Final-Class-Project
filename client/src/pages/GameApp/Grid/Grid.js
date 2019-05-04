@@ -1,6 +1,6 @@
 import React from 'react';
 import Cell from '../Cell/Cell';
-// import './Grid.css';
+import './Grid.css';
 
 const Grid = ({grid, colors}) => {
   let rows = Object.keys(grid.nodes).map((v) => {
@@ -11,6 +11,7 @@ const Grid = ({grid, colors}) => {
     <div className="grid">
       {rows}
     </div>
+    
   );
 }
 
