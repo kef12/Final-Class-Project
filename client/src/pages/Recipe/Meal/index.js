@@ -5,6 +5,13 @@ import Tag from '../Tag';
 
 const Meal = (props) => (
   // eslint-disable-next-line react/jsx-no-target-blank
+
+  <div class="row" id="content">
+       <div class="col-md-1" id="sides"></div>
+
+      <div class="col-md-10">
+      <div class="row">
+  
   <a className="Meal" href={props.url} target="_blank">
     <div className="Meal__head">{props.type}</div>
     <div className="Meal__content">
@@ -22,6 +29,11 @@ const Meal = (props) => (
       </div>
     </div>
   </a>
+  </div>
+  </div>
+
+  <div class="col-md-1" id="sides"></div>
+  </div>
 );
 
 Meal.propTypes = {

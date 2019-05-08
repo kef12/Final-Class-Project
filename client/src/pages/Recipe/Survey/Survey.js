@@ -11,7 +11,8 @@ import Tabs, { Tab } from '../Tabs'; //Tabs
 import getPlan from '../../../utils/mealPlan'; //mealPlan
 import { getSurveyData } from '../../../utils/data'; //data
 
-// import './Survey.css';
+require ("../Recipe.css");
+
 
 export default class Survey extends Component{
 
@@ -118,6 +119,11 @@ export default class Survey extends Component{
   render(){
     const { selectOpt, dietSpec, healthSpec } = this.data;
     return(
+
+      <div class="row" id="content">
+       <div class="col-md-1" id="sides"></div>
+
+      <div class="col-md-10">
       <div className="Survey">
         {/* <Nav /> */}
         {
@@ -199,6 +205,9 @@ export default class Survey extends Component{
         {
           this.state.redirect ? <Redirect to={{pathname:"/meal-plan",state:{data:this.state.data}}}/> : null
         }
+      </div>
+      </div>
+      <div class="col-md-1" id="sides"></div>
       </div>
     )
   }

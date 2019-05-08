@@ -1,17 +1,21 @@
-#Landing {
 
-}
 
 .container {
-    /* background-color: white; */
+    background-color: white;
     text-align: center;
+    width: 1000px; 
+    margin: 0 auto;
+    overflow: hidden; 
+    
 }
 
 
 
-.Landing__banner__heading {
-    background-color: blueviolet;
+.Landing__banner__heading, .Survey__heading {
+    /* background-color: blueviolet; */
     margin-top: 20px;
+    text-align: center;
+    font-style: oblique;
 }
 
 .Landing__data__content {
@@ -20,13 +24,15 @@
     margin-bottom: 50px;
 }
 
-.Landing__data__button {
+.Landing__data__button, .Survey__goto__button--next, .Survey__goto__button--back {
     margin-bottom: 20px;
     background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34));
     background-color: purple; 
     font-weight: 900;
     padding: 10px;
     font-size: 20px;
+    color: white;
+    
 }
 
 li {
@@ -37,5 +43,14 @@ li {
 }
 
 #sides {
-    background-color: blue;
+    background-image: url("https://s3.envato.com/files/254885786/FMX_2291.jpg");
+}
+
+#content, .Survey, .Survey__heading {
+    float: middle;
+    text-align: center;
+}
+
+.Meal, .Meal_head, .Meal_content, .Meal__content__img, .Meal__content__desc, .Meal__content__desc--heading, .Meal__content__desc--source, .Meal__content__labels {
+    justify-content: center;
 }
