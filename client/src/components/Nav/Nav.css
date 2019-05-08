@@ -1,0 +1,21 @@
+#navBar {
+    
+        margin-right: 52px;
+        font-size: 14px;
+            font-weight: 700;
+            font-display: black;
+        
+        background-color: purple;
+	    text-transform: uppercase;
+        text-align: center;
+        float:none;
+        margin:0 auto;
+        display: block;     
+        
+        
+}
+
+/* #navBarS> li {
+    display: inline-block;
+    float:none;
+} */

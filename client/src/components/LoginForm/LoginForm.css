@@ -1,0 +1,14 @@
+#login {
+    
+    margin-right: 52px;
+    font-size: 14px;
+    text-align: center;
+    float:none;
+    margin:0 auto;
+    display: block;   
+    padding-top: 50px;  
+    
+}
+#loginSubmit {
+    margin-top: 10px;
+}
