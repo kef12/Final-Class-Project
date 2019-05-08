@@ -13,6 +13,7 @@ import Plan from "./pages/Recipe/Plan";
 import Nav from "./components/Nav";
 
 
+
 function App() {
    return (
        <Router>
@@ -28,6 +29,7 @@ function App() {
                {/* <Route path="/Recipe/recipehome" component={RecipeHome} /> */}
                <Route path="/survey" component={Survey} />
                <Route path="/meal-plan" component={Plan} />
+               
                
             </Switch>
            </div>

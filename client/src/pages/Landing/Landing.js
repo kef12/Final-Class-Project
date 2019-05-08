@@ -21,8 +21,8 @@ const Landing = () => {
 										<div className="col">								
 											
 												<div className="home_title">
-													<h1><span></span>Time to </h1>
-													<h1>Kill</h1>
+													<h1 className="home_title"><span></span>Time to </h1>
+													<h1 className="home_title">Kill</h1>
 												</div>											
 										</div>
 									</div>

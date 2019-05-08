@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 require ("./Quotes.css");
 
+
 class Quotes extends React.Component {
     state = {
         quote: ""
@@ -20,7 +21,8 @@ class Quotes extends React.Component {
 
     render () {
         return (
-            
+            <div >
+
             <div class="row" id="content">
             <div class="col-md-1" id="quoteSides"></div>
      
@@ -40,6 +42,8 @@ class Quotes extends React.Component {
             </div>
             </div>
             <div class="col-md-1" id="quoteSides"></div>
+            </div>
+
             </div>
                 
             
