@@ -33,8 +33,9 @@ if (process.env.NODE_ENV === "production") {
 // });
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  // res.sendFil
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log(`🌎 ==> API server now on port ${PORT}!`);
   });
