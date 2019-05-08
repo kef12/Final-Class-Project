@@ -2,27 +2,20 @@
     
         margin-right: 52px;
         font-size: 14px;
-            font-weight: 700;
-            font-display: black;
-        /* background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34)); */
+            font-weight: 700;       
         background-color: purple;
 	    text-transform: uppercase;
         text-align: center;
-     
-        
+        float:none;
+        margin:0 auto;
+        display: block;          
         
 }
 
-#navBar {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
-    background-color:purple;
-    color: black;
-}
+
 
 #navBarS> li {
     display: inline-block;
     float:none;
 }
+
