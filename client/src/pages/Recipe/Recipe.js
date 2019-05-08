@@ -17,14 +17,18 @@ class Recipe extends React.Component {
 
 render () {
     return (
+       <div class="container">
+      <div class="row"></div>
+      <div class="col-1" id="sides"></div>
+      <div class="col-10">
         <div className="Landing">
     <div className="Landing__banner">
       <h1 className="Landing__banner__heading">Meal Planning Made Easy</h1>
     </div>
     <div className="Landing__data">
       <div className="Landing__data__content">
-        <h1>Make your free time productive with the Meal Planning application.</h1>
-        <h1>Does this sound like you? </h1>
+        <h2>Make your free time productive with the Meal Planning application.</h2>
+        <h2>Does this sound like you? </h2>
         <ul>
           <li>Wasted a lot of time thinking about what I should make for dinner today.</li>
           <li>Want to watch what I eat but don't know how?</li>
@@ -35,6 +39,10 @@ render () {
       </div>
     </div>
   </div>
+  </div>
+  <div class="col-1" id="sides"></div>
+  
+   </div> 
     )
 
     // (

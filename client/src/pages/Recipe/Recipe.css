@@ -1,0 +1,41 @@
+#Landing {
+
+}
+
+.container {
+    /* background-color: white; */
+    text-align: center;
+}
+
+
+
+.Landing__banner__heading {
+    background-color: blueviolet;
+    margin-top: 20px;
+}
+
+.Landing__data__content {
+    border: dotted;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.Landing__data__button {
+    margin-bottom: 20px;
+    background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34));
+    background-color: purple; 
+    font-weight: 900;
+    padding: 10px;
+    font-size: 20px;
+}
+
+li {
+    margin: 10px;
+    color: black;
+    font-weight: 900;
+   
+}
+
+#sides {
+    background-color: blue;
+}

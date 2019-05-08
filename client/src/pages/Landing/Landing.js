@@ -11,32 +11,26 @@ const Landing = () => {
 	    <div className="home">
 		
 		    <div className="home_slider_container">
-			    <div className="owl-carousel owl-theme home_slider">
-
-					<div className="slide">
+			   			
 						<div className="home_slider_overlay"></div>
 						<ValidationForm />
-						<div className="slide_wrap d-flex flex-column align-items-start justify-content-center">
-						    <div className="home_container">
-								
-							    <div className="container">
+						<div className="flex-column align-items-start justify-content-center">
+						    <div className="home_container">			
+							    
 									<div className="row">
-										<div className="col">
-											<div className="home_content active">
-												<div className="home_subtitle"></div>
+										<div className="col">								
+											
 												<div className="home_title">
 													<h1><span></span>Time to </h1>
 													<h1>Kill</h1>
-												</div>
-											</div>
+												</div>											
 										</div>
 									</div>
-								</div>
+								
 							</div>
-						</div>
-					</div>
+						</div>				
 					
-			    </div>
+			    
 		    </div>
         </div>
     </div> 
