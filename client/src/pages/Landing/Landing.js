@@ -1,9 +1,7 @@
 // import {Quotes, GameApp, Recipe} from 'react-router';
 import React from "react";
-import NameForm from "../../components/LoginForm/login";
-import ValiationForm from "../../components/LoginForm/loginForm";
+import ValidationForm from "../../components/LoginForm/loginForm";
 import ("./Landing.css");
-
 
 
 const Landing = () => {
@@ -17,7 +15,7 @@ const Landing = () => {
 
 					<div className="slide">
 						<div className="home_slider_overlay"></div>
-						<ValiationForm />
+						<ValidationForm />
 						<div className="slide_wrap d-flex flex-column align-items-start justify-content-center">
 						    <div className="home_container">
 								
