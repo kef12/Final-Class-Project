@@ -35,3 +35,8 @@
   #words {
     margin-top: 150px;
   }
+
+  #quoteSides {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/05/10/15/sunset-2582656__340.jpg");
+    background-size: cover;
+  }
