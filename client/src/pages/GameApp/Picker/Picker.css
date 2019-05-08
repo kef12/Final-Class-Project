@@ -1,0 +1,14 @@
+.picker {
+	margin-left: 45px;
+	margin-right: 5px;
+	border-radius: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+
+.picker:first-child {
+	margin-left: 250px;
+}
+.picker:last-child {
+	margin-right: 0px;
+}
