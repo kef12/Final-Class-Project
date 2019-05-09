@@ -1,7 +1,7 @@
 {
   "name": "final-class-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application to keep you busy when you're bored!",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -26,6 +26,7 @@
     "express": "^4.16.4",
     "express-favicon": "^2.0.1",
     "if-env": "^1.0.4",
+    "mongoose": "^5.5.6",
     "path": "^0.12.7"
   }
 }

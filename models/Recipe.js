@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 
 const RecipeSchema = new Schema({
     title: String,
-    authors: [String],
     description: String,
     img: {
         type: {String},
@@ -13,5 +12,5 @@ const RecipeSchema = new Schema({
     }
 });
 
-const Book = mongoose.model("Book", BookSchema);
-module.exports = Book;
+const Recipe = mongoose.model("Recipe", RecipeSchema);
+module.exports = Recipe;
