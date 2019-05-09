@@ -1,13 +1,14 @@
 require("dotenv").config();
+const router = require("express").Router();
 const axios = require("axios");
 const db = require("../models");
 const path = require("path");
 
 module.exports = function(app) {
-    app.get("/api/books", (req, res) => {
-        db.Book.find().then(
-            (booksData) => {
-                res.json(booksData);
+    app.get("/api/recipe", (req, res) => {
+        db.Recipe.find().then(
+            (recipeData) => {
+                res.json(recipeData);
             }
         ).catch(
             (err) => {
@@ -16,24 +17,8 @@ module.exports = function(app) {
         );
     });
 
-    app.post("/search", (req, res) => {
-        // set bookTitle to the req.body.title with spaces replaced with plus signs(+)
-        let bookTitle = req.body.title.replace(/\s/g, "+");
-        axios.get(
-            `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=${process.env.GBOOKS_KEY}`
-        ).then(
-            (response) => {
-                res.json(response.data.items)
-            }
-        ).catch(
-            (err) => {
-                res.json({error: error})
-            }
-        );
-    });
-
-    app.post("/api/books", (req, res) => {
-        db.Book.create(req.body).then(
+    app.post("/api/saved", (req, res) => {
+        db.Recipe.create(req.body).then(
             (response) => {
                 res.json({successful: response});
             }
@@ -44,8 +29,8 @@ module.exports = function(app) {
         );
     });
 
-    app.delete("/api/books/:id", (req, res) => {
-        db.Book.findByIdAndDelete(req.params.id).then(
+    app.delete("/api/recipe/:id", (req, res) => {
+        db.Recipe.findByIdAndDelete(req.params.id).then(
             (response) => {
                 res.json({successful: response});
             }

@@ -1,9 +1,23 @@
-const express = require('express');
-const favicon = require('express-favicon');
+const express = require('express'); //check
+// const favicon = require('express-favicon');
 const path = require('path');
-const PORT = process.env.PORT || 8080;
-const app = express();
-const mongoose = require("mongoose");
+const logger = require("morgan");
+const PORT = process.env.PORT || 8080; //check
+//Requiring the models folder to access the recipes collection
+const Recipe = require("./models")
+const app = express(); //check
+const mongoose = require("mongoose"); //check
+
+// Use morgan logger for  logging results
+app.use(logger("dev"));
+// Define middleware here
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 const mongoURL = process.env.PROD_MONGODB || "mongodb://127.00.1:27017/finalproject"
 mongoose.connect(mongoURL, {useNewUrlParser: true})
   .then(() => {
@@ -13,24 +27,22 @@ mongoose.connect(mongoURL, {useNewUrlParser: true})
     console.log(`Error connecting to mongoDB: ${err}`);
   });
 
-// require("./client/src/utils/API/API")(app);
+//Route to post our recipe results to mongoDB via Mongoose
+
+app.post("/saved", function(req, res) {
+    // Create a new user using req.body
+    User.create(req.body)
+    .then(function(dbUser) {
+      // If saved successfully, send the the new User document to the client
+      res.json(dbUser);
+    })
+    .catch(function(err) {
+      // If an error occurs, send the error to the client
+      res.json(err);
+    });
+});
 
 
-// Define middleware here
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-}
-
-// app.use(favicon(__dirname + '/build/favicon.ico'));
-// // the __dirname is the current directory from where the script is running
-// app.use(express.static(__dirname));
-// app.use(express.static(path.join(__dirname, 'build')));
-// app.get('/ping', function (req, res) {
-//  return res.send('pong');
-// });
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
   // res.sendFil
