@@ -12,3 +12,18 @@
 #loginSubmit {
     margin-top: 10px;
 }
+
+input {
+    padding: 5px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+#loginSubmit {
+    background: linear-gradient(to right, rgba(120, 0, 255, 0.34), rgba(255, 14, 59, 0.34));
+    background-color: #68113F;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    width: 150px;
+}

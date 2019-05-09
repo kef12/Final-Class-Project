@@ -17,15 +17,23 @@ class Recipe extends React.Component {
 
 render () {
     return (
-       <div class="container">
-      <div class="row"></div>
-      <div class="col-1" id="sides"></div>
-      <div class="col-10">
-        <div className="Landing">
+      //  <div class="container">
+       <div class="row" id="content">
+       <div class="col-md-1" id="sides"></div>
+
+      <div class="col-md-10">
+      <div class="row">
+      {/* <div class="col-1" id="sides"></div> */}
+      {/* <div class="col-10"> */}
+        {/* <div className="Landing"> */}
     <div className="Landing__banner">
       <h1 className="Landing__banner__heading">Meal Planning Made Easy</h1>
     </div>
-    <div className="Landing__data">
+    {/* </div> */}
+    </div>
+
+    {/* <div class="row"> */}
+    {/* <div className="Landing__data"> */}
       <div className="Landing__data__content">
         <h2>Make your free time productive with the Meal Planning application.</h2>
         <h2>Does this sound like you? </h2>
@@ -37,12 +45,15 @@ render () {
         </ul>
         <Button type="accent" link={true} path="/survey" className="Landing__data__button">Let's find that meal plan</Button>
       </div>
-    </div>
-  </div>
-  </div>
-  <div class="col-1" id="sides"></div>
+      </div>
+    {/* </div> */}
+  {/* </div> */}
+  {/* </div> */}
+  {/* <div class="col-1" id="sides"></div> */}
   
-   </div> 
+  <div class="col-md-1" id="sides"></div>
+  </div>
+   /* </div>  */
     )
 
     // (
