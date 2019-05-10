@@ -48,6 +48,9 @@ li {
 
 #content, .Survey, .Survey__heading {
     float: middle;
+    text-align: left;
+}
+.Survey__goto{
     text-align: center;
 }
 
