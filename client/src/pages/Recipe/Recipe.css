@@ -21,7 +21,7 @@
 .Landing__data__content {
     border: dotted;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 300px;
 }
 
 .Landing__data__button, .Survey__goto__button--next, .Survey__goto__button--back {
